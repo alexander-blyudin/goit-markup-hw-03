@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--------- Header-------- -->
     <header class="header">
       <div class="container header-container">
         <a class="logo" href="./index.html"
@@ -49,42 +50,44 @@
         </div>
       </div>
     </header>
-
+    <!-------------- hero---------- -->
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-hero" type="button">Заказать услугу</button>
         </div>
       </section>
 
-      <section class="prior">
+      <!-- -------Наши приимущества------- -->
+
+      <section class="prior section">
         <div class="container">
           <!--скрити заголовок h2 за допомогою CSS-->
           <h2 class="hide">Наши приимущества</h2>
           <ul class="list">
-            <li>
+            <li class="list__item">
               <h3 class="title-prior">Внимание к деталям</h3>
               <p class="title-description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="list__item">
               <h3 class="title-prior">Пунктуальность</h3>
               <p class="title-description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="list__item">
               <h3 class="title-prior">Планирование</h3>
               <p class="title-description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="list__item">
               <h3 class="title-prior">Современные технологии</h3>
               <p class="title-description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -94,8 +97,8 @@
           </ul>
         </div>
       </section>
-
-      <section>
+      <!---------  Чем мы занимаемся--------->
+      <section class="our-work section">
         <div class="container">
           <h2 class="title-section">Чем мы занимаемся</h2>
           <ul class="list">
@@ -123,13 +126,14 @@
           </ul>
         </div>
       </section>
-
+      <!-- -----------Наша команда---------- -->
       <section class="team">
         <div class="container">
           <h2 class="title-section">Наша команда</h2>
           <ul class="list">
             <li class="item-team">
               <img
+                class="img-item-team"
                 src="./img/team/pd.jpeg"
                 alt="фото Игоря Демьяненко"
                 width="270"
@@ -139,6 +143,7 @@
             </li>
             <li class="item-team">
               <img
+                class="img-item-team"
                 src="./img/team/fd.jpeg"
                 alt="фото Ольги Репиной"
                 width="270"
@@ -148,6 +153,7 @@
             </li>
             <li class="item-team">
               <img
+                class="img-item-team"
                 src="./img/team/mk.jpeg"
                 alt="фото Николая Тарасова"
                 width="270"
@@ -157,6 +163,7 @@
             </li>
             <li class="item-team">
               <img
+                class="img-item-team"
                 src="./img/team/ui.jpeg"
                 alt="фото Михаила Ермакова"
                 width="270"
@@ -168,7 +175,7 @@
         </div>
       </section>
     </main>
-
+    <!-- ------Footer------ -->
     <footer class="footer">
       <div class="container">
         <a class="logo" href="/">Web<span class="web-footer">Studio</span> </a>

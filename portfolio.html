@@ -19,43 +19,63 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-navigation">
+      <div class="container header-container">
         <a class="logo" href="./index.html"
           >Web<span class="web-header">Studio</span>
         </a>
 
-        <ul class="site-nav">
-          <li class="item"><a class="link" href="./index.html">Студия</a></li>
-          <li class="item">
-            <a class="link current" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="item"><a class="link" href="/">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="site-nav">
+            <li class="item-nav">
+              <a class="link" href="/">Студия</a>
+            </li>
+            <li class="item-nav">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item-nav"><a class="link" href="/">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="auth-nav">
-        <li class="item">
-          <a class="link" href="info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="item"><a class="link" href="/">+38 096 111 11 11</a></li>
-      </ul>
+        <div class="auth-nav">
+          <ul class="auth-cont">
+            <li class="item-nav">
+              <a class="link" href="info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="item-nav">
+              <a class="link" href="/">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <section>
         <!--скрити заголовок h1 -->
         <h1 class="hide">Кнопки фільтру</h1>
-        <ul class="btn-list">
-          <li><button class="btn" type="button">Все</button></li>
-          <li><button class="btn" type="button">Веб-сайты</button></li>
-          <li><button class="btn" type="button">Приложения</button></li>
-          <li><button class="btn" type="button">Дизайн</button></li>
-          <li><button class="btn" type="button">Маркетинг</button></li>
-        </ul>
+        <div class="container">
+          <ul class="btn-list">
+            <li class="item-btn">
+              <button class="btn" type="button">Все</button>
+            </li>
+            <li class="item-btn">
+              <button class="btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="item-btn">
+              <button class="btn" type="button">Приложения</button>
+            </li>
+            <li class="item-btn">
+              <button class="btn" type="button">Дизайн</button>
+            </li>
+            <li class="item-btn">
+              <button class="btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
         <!--скрити заголовок h2-->
         <h2 class="hide">Приклади робіт</h2>
         <ul>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/tehnokr.jpeg"
               alt="фото спеціалістів"
@@ -64,7 +84,7 @@
             <h3 class="example">Технокряк</h3>
             <p class="example-name">Веб-сайт</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/poster.jpeg"
               alt="баскетболіст блокує опонента"
@@ -75,7 +95,7 @@
             </h3>
             <p class="example-name">Дизайн</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/restaur.jpeg"
               alt="логотип ресторана"
@@ -84,7 +104,7 @@
             <h3 class="example">Ресторан <span lang="en">Seafood</span></h3>
             <p class="example-name">Приложение</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/prime.jpeg"
               alt="наваушники"
@@ -93,7 +113,7 @@
             <h3 class="example">Проект <span lang="en">Prime</span></h3>
             <p class="example-name">Маркетинг</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/boxes.jpeg"
               alt="дві коробки"
@@ -102,7 +122,7 @@
             <h3 class="example">Проект <span lang="en"> Boxes</span></h3>
             <p class="example-name">Приложение</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/inspir.jpeg"
               alt="монітор Apple"
@@ -111,19 +131,19 @@
             <h3 class="example" lang="en">Inspiration has no Borders</h3>
             <p class="example-name">Веб-сайт</p>
           </li>
-          <li>
+          <li class="work-example">
             <img src="./img/portfolio/izdanie.jpeg" alt="журнал" width="370" />
             <h3 class="example">
               Издание <span lang="en"> Limited Edition</span>
             </h3>
             <p class="example-name">Дизайн</p>
           </li>
-          <li>
+          <li class="work-example">
             <img src="./img/portfolio/lab.jpeg" alt="бірка" width="370" />
             <h3 class="example">Проект<span lang="en"> LAB </span></h3>
             <p class="example-name">Маркетинг</p>
           </li>
-          <li>
+          <li class="work-example">
             <img
               src="./img/portfolio/gb.jpeg"
               alt="чоловік друкує на ноутбуці"
