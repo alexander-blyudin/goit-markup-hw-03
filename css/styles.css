@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -18,7 +18,11 @@ h5,
 h6,
 p {
   margin: 0;
-} */
+}
+
+img {
+  display: block;
+}
 
 /* 
  основний колір тексту #212121 
@@ -51,27 +55,11 @@ p {
 }
 .header {
   background-color: #ffffff;
-  /* display: flex; */
 }
-.header-nav {
-  /* display: flex; */
+.header-container {
+  display: flex;
+  align-items: center;
 }
-.site-nav {
-  list-style: none;
-  /* display: flex; */
-}
-.item {
-  /* margin-right: 50px; */
-}
-.auth-nav {
-  list-style: none;
-  /* display: flex; */
-  /* margin-left: auto; */
-}
-/* .auth-nav > .item:last-child {
-  margin-right: 0;
-} */
-
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -80,7 +68,31 @@ p {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  /* margin-right: 93px; */
+  margin-right: 93px;
+}
+
+.site-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.item-nav {
+  list-style: none;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: 1px solid red;
+}
+.item-nav:last-child {
+  margin-right: 0;
+}
+.auth-nav {
+  margin-left: auto;
+}
+.auth-cont {
+  list-style: none;
+  display: flex;
 }
 
 .link {
@@ -93,6 +105,8 @@ p {
 
   color: var(--primary-text-color);
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .auth-nav .link {
@@ -103,17 +117,20 @@ p {
 }
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .title-hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: #ffffff;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .btn-hero {
   color: #ffffff;
@@ -123,6 +140,8 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
+
+  margin-bottom: 200px;
 }
 .btn-hero:hover {
   background: #188ce8;
@@ -137,11 +156,9 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 
-.list {
-  list-style: none;
-}
 .title-prior {
   font-weight: 700;
 
@@ -150,6 +167,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .title-description {
   line-height: 1.71;
@@ -161,6 +179,19 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 36px;
+  margin-bottom: 50px;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-title {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.item-title:last-child {
+  margin-right: 0;
 }
 
 .team {
