@@ -26,6 +26,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 
@@ -54,13 +56,12 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid red;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: "Raleway";
@@ -80,8 +81,6 @@ img {
 
 .item-nav {
   margin-right: 50px;
-
-  outline: 1px solid red;
 }
 .item-nav .link {
   display: inline-block;
@@ -320,18 +319,27 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
 }
 .example-name {
   line-height: 1.9;
-
   letter-spacing: 0.03em;
+  margin-top: 4px;
 
   color: var(--secondary-text-color);
 }
-.work-example {
-  width: calc(100% / 3);
+.list-works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
 }
 
-/* flex-basis: calc((100% - 30px) / 3); */
+.work-example {
+  flex-basis: calc(100% / 3-30px);
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.card-content {
+  padding: 20px 24px;
+}
