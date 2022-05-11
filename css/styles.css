@@ -317,10 +317,9 @@ img {
 }
 
 .btn-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .btn-list .item-btn {
   margin-right: 8px;
@@ -355,4 +354,7 @@ img {
 }
 .card-content {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
