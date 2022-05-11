@@ -112,7 +112,7 @@ img {
   text-decoration: none;
 }
 
-.auth-nav .link {
+.auth-cont .link {
   color: var(--secondary-text-color);
 }
 .site-nav .link.current {
